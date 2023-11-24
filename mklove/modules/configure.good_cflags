@@ -9,7 +9,7 @@
 
 function checks {
     mkl_mkvar_append CPPFLAGS CPPFLAGS \
-        "-Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align"
+        "-Wall -Wsign-compare -Wfloat-equal -Wpointer-arith -Wcast-align -I/usr/include/libxml2"
 
     if [[ $MKL_WANT_WERROR = "y" ]]; then
         mkl_mkvar_append CPPFLAGS CPPFLAGS \
